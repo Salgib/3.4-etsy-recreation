@@ -1,0 +1,20 @@
+{
+  "name": "3.4-etsy-recreation",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Salgib/3.4-etsy-recreation",
+  "authors": [
+    "Shawn Gibson <saljgib@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "~3.0.3",
+    "neat": "~1.7.2"
+  }
+}
