@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  var url = "https://api.etsy.com/v2/listings/active.js?api_key=bnvy6l16m2bwahu9wz7ejkk2&keywords=tacos&includes=Images,Shop";
+  var url = "https://api.etsy.com/v2/listings/active.js?api_key=bnvy6l16m2bwahu9wz7ejkk2&keywords=whiskey&includes=Images,Shop";
 
 
 fetchJSONP(url, app);
@@ -33,18 +33,19 @@ fetchJSONP(url, app);
    Etsy's API return data in a slightly different format.
    Extract the data accordingly
  */
+
  function app(response) {
-   var products = response.data.results;
+   var products = response.results;
    console.log(products);
   //  displayCharacterNames(characters);
  }
-
- function displayCharacterNames(characters) {
-   var source   = document.querySelector("#character-template").innerHTML;
-   var template = Handlebars.compile(source);
-   characters.forEach(function(character){
-     var output = template(character);
-     ulElement.insertAdjacentHTML('beforeend', output);
-   });
- }
+ //
+ // function displayCharacterNames(characters) {
+ //   var source   = document.querySelector("#character-template").innerHTML;
+ //   var template = Handlebars.compile(source);
+ //   characters.forEach(function(character){
+ //     var output = template(character);
+ //     ulElement.insertAdjacentHTML('beforeend', output);
+ //   });
+ // }
 })();
