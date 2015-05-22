@@ -35,6 +35,7 @@ fetchJSONP(url, app);
  */
 
  function app(response) {
+   
    var products = response.results;
    console.log(products);
   //  displayCharacterNames(characters);
